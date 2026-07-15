@@ -2,9 +2,17 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
+import { setupPwa } from './pwa'
+import { applyTheme, getStoredTheme } from './theme'
+
+const splash = document.getElementById('app-splash')
+applyTheme(getStoredTheme())
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
   </StrictMode>,
 )
+
+splash?.classList.add('app-splash--hidden')
+setupPwa()

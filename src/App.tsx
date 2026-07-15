@@ -4,7 +4,7 @@ import Home from "./pages/Home"
 import Lessons from "./pages/Lessons"
 import Lesson from "./pages/Lesson"
 import Profile from "./pages/Profile"
-import { Link } from "react-router-dom"
+
 function App() {
   return (
     <BrowserRouter>
