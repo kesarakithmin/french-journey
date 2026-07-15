@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import Card from "../components/Card"
-import { curriculum } from "../data/curriculum"
+import { lessonContent } from "../data/lessonContent"
 
 function Lessons() {
   return (
@@ -28,12 +28,12 @@ function Lessons() {
       </Card>
 
       <div className="space-y-4">
-        {curriculum.map((lesson) => (
-          <Link key={lesson.day} to={`/lessons/${lesson.day}`} className="block">
+        {lessonContent.map((lesson) => (
+          <Link key={lesson.id} to={`/lessons/${lesson.id}`} className="block">
             <Card className="transition hover:-translate-y-0.5">
               <div className="flex items-start justify-between gap-3">
                 <div>
-                  <h2 className="text-xl font-semibold">Day {lesson.day}: {lesson.title}</h2>
+                  <h2 className="text-xl font-semibold">Day {lesson.id}: {lesson.title}</h2>
                   <p className="mt-1 text-sm text-[color:var(--color-text-muted)]">{lesson.level}</p>
                 </div>
                 <span className="rounded-full bg-[color:var(--color-primary)]/10 px-3 py-1 text-xs font-semibold text-[color:var(--color-primary)]">
