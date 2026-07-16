@@ -72,7 +72,7 @@ export const lessonContent: Lesson[] = [
       translation: [{ prompt: "Translate: I am Ana.", answer: "" }],
       fillInTheBlanks: [
         {
-          prompt: "Write your introduction:",
+          prompt: "Complete: Bonjour, je m\'appelle ______.",
           answer: "",
           type: "personal"
         }
