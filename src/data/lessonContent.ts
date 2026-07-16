@@ -69,8 +69,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "What does Bonjour mean?", options: ["Goodbye", "Hello", "Thank you"], answer: "Hello" },
         { prompt: "Which phrase means 'My name is...'?", options: ["Je suis fatigué", "Je m'appelle", "Merci beaucoup"], answer: "Je m'appelle" }
       ],
-      translation: [{ prompt: "Translate: I am Ana." }],
-      fillInTheBlanks: [{ prompt: "Bonjour, je m'appelle ___." }],
+      translation: [{ prompt: "Translate: I am Ana.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Bonjour, je m'appelle ___.", answer: "" }],
       speaking: ["Introduce yourself and say how you are feeling today."]
     },
     homework: [
@@ -149,8 +149,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "What does Comment ça va ? mean?", options: ["How are you?", "See you later", "My name is..."], answer: "How are you?" },
         { prompt: "Which response is polite?", options: ["Très bien, merci.", "Au revoir.", "Je suis fatigué."], answer: "Très bien, merci." }
       ],
-      translation: [{ prompt: "Translate: Not bad, and you?" }],
-      fillInTheBlanks: [{ prompt: "___ va, merci." }],
+      translation: [{ prompt: "Translate: Not bad, and you?", answer: "" }],
+      fillInTheBlanks: [{ prompt: "___ va, merci.", answer: "" }],
       speaking: ["Ask a friend how they are and answer with your own response."]
     },
     homework: [
@@ -239,8 +239,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which number is 'ten' in French?", options: ["un", "dix", "vingt"], answer: "dix" },
         { prompt: "What does J'ai vingt ans mean?", options: ["I’m twenty years old", "I’m from Paris", "I like coffee"], answer: "I’m twenty years old" }
       ],
-      translation: [{ prompt: "Translate: twelve" }],
-      fillInTheBlanks: [{ prompt: "___ ans." }],
+      translation: [{ prompt: "Translate: twelve", answer: "" }],
+      fillInTheBlanks: [{ prompt: "___ ans.", answer: "" }],
       speaking: ["Count from zero to twenty aloud."]
     },
     homework: [
@@ -312,8 +312,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "What is the French word for Friday?", options: ["samedi", "vendredi", "dimanche"], answer: "vendredi" },
         { prompt: "Which phrase means 'Today is Monday'?", options: ["Aujourd'hui, c'est mardi.", "Aujourd'hui, c'est lundi.", "Demain, c'est lundi."], answer: "Aujourd'hui, c'est lundi." }
       ],
-      translation: [{ prompt: "Translate: Tomorrow, we have an appointment." }],
-      fillInTheBlanks: [{ prompt: "Aujourd'hui, c'est ___." }],
+      translation: [{ prompt: "Translate: Tomorrow, we have an appointment.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Aujourd'hui, c'est ___.", answer: "" }],
       speaking: ["Tell your teacher what you are doing on two days this week."]
     },
     homework: [
@@ -383,8 +383,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "How do you say 'I am twenty years old' in French?", options: ["J'ai vingt ans", "Je suis vingt", "J'ai vingt"], answer: "J'ai vingt ans" },
         { prompt: "What does anniversaire mean?", options: ["Birthday", "Address", "City"], answer: "Birthday" }
       ],
-      translation: [{ prompt: "Translate: My birthday is in June." }],
-      fillInTheBlanks: [{ prompt: "J'ai ___ ans." }],
+      translation: [{ prompt: "Translate: My birthday is in June.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "J'ai ___ ans.", answer: "" }],
       speaking: ["Say your age, your name, and where you live."]
     },
     homework: [
@@ -454,8 +454,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "What is 'mother' in French?", options: ["mère", "père", "sœur"], answer: "mère" },
         { prompt: "Which word means 'brother'?", options: ["frère", "grand-mère", "cousin"], answer: "frère" }
       ],
-      translation: [{ prompt: "Translate: This is my sister." }],
-      fillInTheBlanks: [{ prompt: "C'est ma ___." }],
+      translation: [{ prompt: "Translate: This is my sister.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "C'est ma ___.", answer: "" }],
       speaking: ["Describe your family in three sentences."]
     },
     homework: [
@@ -527,8 +527,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "What does boire mean?", options: ["to eat", "to drink", "to sleep"], answer: "to drink" },
         { prompt: "Which word means 'water'?", options: ["lait", "eau", "café"], answer: "eau" }
       ],
-      translation: [{ prompt: "Translate: I would like a coffee." }],
-      fillInTheBlanks: [{ prompt: "Je voudrais un ___." }],
+      translation: [{ prompt: "Translate: I would like a coffee.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Je voudrais un ___.", answer: "" }],
       speaking: ["Order a drink in a café using one phrase."]
     },
     homework: [
@@ -599,8 +599,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "What does acheter mean?", options: ["to buy", "to sell", "to look for"], answer: "to buy" },
         { prompt: "Which phrase means 'Where is the cheese?'", options: ["Où est le fromage ?", "Je cherche du pain.", "Combien coûte cela ?"], answer: "Où est le fromage ?" }
       ],
-      translation: [{ prompt: "Translate: I am looking for bread." }],
-      fillInTheBlanks: [{ prompt: "Je cherche du ___." }],
+      translation: [{ prompt: "Translate: I am looking for bread.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Je cherche du ___.", answer: "" }],
       speaking: ["Ask for one item in a shop using a polite phrase."]
     },
     homework: [
@@ -670,8 +670,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "What does payer mean?", options: ["to buy", "to pay", "to cost"], answer: "to pay" },
         { prompt: "Which phrase means 'How much does that cost?'", options: ["Combien coûte cela ?", "Je cherche du pain.", "Où est le fromage ?"], answer: "Combien coûte cela ?" }
       ],
-      translation: [{ prompt: "Translate: I want to pay by card." }],
-      fillInTheBlanks: [{ prompt: "C'est ___ ?" }],
+      translation: [{ prompt: "Translate: I want to pay by card.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "C'est ___ ?", answer: "" }],
       speaking: ["Ask how much an item costs and answer with a price."]
     },
     homework: [
@@ -741,8 +741,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "What does addition mean?", options: ["menu", "bill", "drink"], answer: "bill" },
         { prompt: "Which phrase means 'The bill, please'?", options: ["L'addition, s'il vous plaît.", "Je voudrais un café.", "Bonjour, merci."], answer: "L'addition, s'il vous plaît." }
       ],
-      translation: [{ prompt: "Translate: I would like the menu, please." }],
-      fillInTheBlanks: [{ prompt: "Je voudrais ___ menu." }],
+      translation: [{ prompt: "Translate: I would like the menu, please.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Je voudrais ___ menu.", answer: "" }],
       speaking: ["Order a drink or ask for the bill politely."]
     },
     homework: [
@@ -811,8 +811,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which phrase means I am?", options: ["je suis", "j'ai", "je vais"], answer: "je suis" },
         { prompt: "Which verb means to go?", options: ["aller", "avoir", "faire"], answer: "aller" }
       ],
-      translation: [{ prompt: "Translate: I am ready." }, { prompt: "Translate: I have a bag." }],
-      fillInTheBlanks: [{ prompt: "Je ___ au marché. (am going)" }, { prompt: "J'___ un rendez-vous. (have)" }],
+      translation: [{ prompt: "Translate: I am ready.", answer: "" }, { prompt: "Translate: I have a bag.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Je ___ au marché. (am going)", answer: "" }, { prompt: "J'___ un rendez-vous. (have)", answer: "" }],
       speaking: ["Say four sentences about yourself using je suis, j'ai, je vais, and je fais."]
     },
     homework: [
@@ -881,8 +881,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which sentence means She lives here?", options: ["Elle habite ici.", "Elle cherche ici.", "Elle parle ici."], answer: "Elle habite ici." },
         { prompt: "What does avec mean?", options: ["with", "often", "here"], answer: "with" }
       ],
-      translation: [{ prompt: "Translate: I am looking for a ticket." }, { prompt: "Translate: Do you work here?" }],
-      fillInTheBlanks: [{ prompt: "Je ___ français un peu." }, { prompt: "Elle ___ une adresse." }],
+      translation: [{ prompt: "Translate: I am looking for a ticket.", answer: "" }, { prompt: "Translate: Do you work here?", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Je ___ français un peu.", answer: "" }, { prompt: "Elle ___ une adresse.", answer: "" }],
       speaking: ["Make five subject + verb + place sentences about your day."]
     },
     homework: [
@@ -951,8 +951,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which pronoun is formal you?", options: ["vous", "tu", "je"], answer: "vous" },
         { prompt: "Which pronoun can mean we in spoken French?", options: ["on", "elle", "ils"], answer: "on" }
       ],
-      translation: [{ prompt: "Translate: She works today." }, { prompt: "Translate: We are going to the café." }],
-      fillInTheBlanks: [{ prompt: "___ êtes français ?" }, { prompt: "___ vont à l'école." }],
+      translation: [{ prompt: "Translate: She works today.", answer: "" }, { prompt: "Translate: We are going to the café.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "___ êtes français ?", answer: "" }, { prompt: "___ vont à l'école.", answer: "" }],
       speaking: ["Point to people in a photo and describe them with il, elle, ils, or elles."]
     },
     homework: [
@@ -1021,8 +1021,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which phrase means my mother?", options: ["ma mère", "mon mère", "mes mère"], answer: "ma mère" },
         { prompt: "What does les parents mean?", options: ["parents", "children", "grandparents"], answer: "parents" }
       ],
-      translation: [{ prompt: "Translate: I have two brothers." }, { prompt: "Translate: My sister lives here." }],
-      fillInTheBlanks: [{ prompt: "Voici ___ famille." }, { prompt: "J'ai ___ frère." }],
+      translation: [{ prompt: "Translate: I have two brothers.", answer: "" }, { prompt: "Translate: My sister lives here.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Voici ___ famille.", answer: "" }, { prompt: "J'ai ___ frère.", answer: "" }],
       speaking: ["Introduce three family members using mon, ma, or mes."]
     },
     homework: [
@@ -1091,8 +1091,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which phrase means she is small?", options: ["Elle est petite.", "Il est petit.", "Elle a petite."], answer: "Elle est petite." },
         { prompt: "What does sympa mean?", options: ["nice", "shy", "serious"], answer: "nice" }
       ],
-      translation: [{ prompt: "Translate: He is calm." }, { prompt: "Translate: My friend is funny." }],
-      fillInTheBlanks: [{ prompt: "Elle est grand___." }, { prompt: "J'ai les ___ courts." }],
+      translation: [{ prompt: "Translate: He is calm.", answer: "" }, { prompt: "Translate: My friend is funny.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Elle est grand___.", answer: "" }, { prompt: "J'ai les ___ courts.", answer: "" }],
       speaking: ["Describe yourself with two appearance words and one personality word."]
     },
     homework: [
@@ -1161,8 +1161,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "What does il y a mean?", options: ["there is / there are", "I have", "it goes"], answer: "there is / there are" },
         { prompt: "Which word means bedroom?", options: ["la chambre", "le salon", "le balcon"], answer: "la chambre" }
       ],
-      translation: [{ prompt: "Translate: I live in a studio apartment." }, { prompt: "Translate: There are two rooms." }],
-      fillInTheBlanks: [{ prompt: "Chez moi, il y ___ un salon." }, { prompt: "J'habite dans une ___." }],
+      translation: [{ prompt: "Translate: I live in a studio apartment.", answer: "" }, { prompt: "Translate: There are two rooms.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Chez moi, il y ___ un salon.", answer: "" }, { prompt: "J'habite dans une ___.", answer: "" }],
       speaking: ["Describe your home or an imaginary home in four short sentences."]
     },
     homework: [
@@ -1231,8 +1231,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which word means under?", options: ["sous", "sur", "dans"], answer: "sous" },
         { prompt: "Which article goes with table?", options: ["la", "le", "les"], answer: "la" }
       ],
-      translation: [{ prompt: "Translate: The phone is on the chair." }, { prompt: "Translate: The lamp is in the bedroom." }],
-      fillInTheBlanks: [{ prompt: "La clé est ___ la table." }, { prompt: "Le lit est dans la ___." }],
+      translation: [{ prompt: "Translate: The phone is on the chair.", answer: "" }, { prompt: "Translate: The lamp is in the bedroom.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "La clé est ___ la table.", answer: "" }, { prompt: "Le lit est dans la ___.", answer: "" }],
       speaking: ["Place three objects near you and say where each one is in French."]
     },
     homework: [
@@ -1301,8 +1301,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which phrase means I get up?", options: ["je me lève", "je rentre", "je dîne"], answer: "je me lève" },
         { prompt: "Which action happens in the evening?", options: ["dîner", "prendre le petit déjeuner", "partir"], answer: "dîner" }
       ],
-      translation: [{ prompt: "Translate: I come home after work." }, { prompt: "Translate: I go to bed at ten." }],
-      fillInTheBlanks: [{ prompt: "Je ___ lève à sept heures." }, { prompt: "Le soir, je me ___." }],
+      translation: [{ prompt: "Translate: I come home after work.", answer: "" }, { prompt: "Translate: I go to bed at ten.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Je ___ lève à sept heures.", answer: "" }, { prompt: "Le soir, je me ___.", answer: "" }],
       speaking: ["Describe your routine in five sentences using morning, day, and evening actions."]
     },
     homework: [
@@ -1371,8 +1371,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which question asks What time is it?", options: ["Quelle heure est-il ?", "Quel âge as-tu ?", "Où est-il ?"], answer: "Quelle heure est-il ?" },
         { prompt: "What does en retard mean?", options: ["late", "early", "on time"], answer: "late" }
       ],
-      translation: [{ prompt: "Translate: It is three o'clock." }, { prompt: "Translate: The appointment is at noon." }],
-      fillInTheBlanks: [{ prompt: "Il ___ neuf heures." }, { prompt: "Je suis en ___." }],
+      translation: [{ prompt: "Translate: It is three o'clock.", answer: "" }, { prompt: "Translate: The appointment is at noon.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Il ___ neuf heures.", answer: "" }, { prompt: "Je suis en ___.", answer: "" }],
       speaking: ["Say the current time and two appointment times in French."]
     },
     homework: [
@@ -1441,8 +1441,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which is the natural job sentence?", options: ["Je suis étudiant.", "Je suis un étudiant.", "J'ai étudiant."], answer: "Je suis étudiant." },
         { prompt: "What does disponible mean?", options: ["available", "busy", "finished"], answer: "available" }
       ],
-      translation: [{ prompt: "Translate: I work in an office." }, { prompt: "Translate: She is a waitress." }],
-      fillInTheBlanks: [{ prompt: "Je ___ à neuf heures." }, { prompt: "Vous faites quoi dans la ___ ?" }],
+      translation: [{ prompt: "Translate: I work in an office.", answer: "" }, { prompt: "Translate: She is a waitress.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Je ___ à neuf heures.", answer: "" }, { prompt: "Vous faites quoi dans la ___ ?", answer: "" }],
       speaking: ["Say what you do, where you work or study, and what time you start."]
     },
     homework: [
@@ -1511,8 +1511,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which phrase means to the café?", options: ["au café", "à le café", "à la café"], answer: "au café" },
         { prompt: "What is la poste?", options: ["post office", "station", "bank"], answer: "post office" }
       ],
-      translation: [{ prompt: "Translate: I am going to the bank." }, { prompt: "Translate: The bakery is on this street." }],
-      fillInTheBlanks: [{ prompt: "Je vais ___ pharmacie." }, { prompt: "La gare est près ___ centre." }],
+      translation: [{ prompt: "Translate: I am going to the bank.", answer: "" }, { prompt: "Translate: The bakery is on this street.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Je vais ___ pharmacie.", answer: "" }, { prompt: "La gare est près ___ centre.", answer: "" }],
       speaking: ["Name five places near your home or school and say Je vais..."]
     },
     homework: [
@@ -1581,8 +1581,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which phrase means straight ahead?", options: ["tout droit", "à gauche", "en face"], answer: "tout droit" },
         { prompt: "Which is the polite command?", options: ["Tournez", "Tourne", "Tourner"], answer: "Tournez" }
       ],
-      translation: [{ prompt: "Translate: Can you help me?" }, { prompt: "Translate: Turn left at the corner." }],
-      fillInTheBlanks: [{ prompt: "Je suis ___." }, { prompt: "Continuez tout ___." }],
+      translation: [{ prompt: "Translate: Can you help me?", answer: "" }, { prompt: "Translate: Turn left at the corner.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Je suis ___.", answer: "" }, { prompt: "Continuez tout ___.", answer: "" }],
       speaking: ["Give a three-step route from your door to a nearby place."]
     },
     homework: [
@@ -1651,8 +1651,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "What is un aller simple?", options: ["one-way ticket", "return ticket", "platform"], answer: "one-way ticket" },
         { prompt: "Which phrase means You have to change?", options: ["Il faut changer.", "Il faut partir.", "Il faut descendre."], answer: "Il faut changer." }
       ],
-      translation: [{ prompt: "Translate: I would like a return ticket." }, { prompt: "Translate: The bus leaves at eight." }],
-      fillInTheBlanks: [{ prompt: "Je voudrais un billet ___ Lyon." }, { prompt: "Le train part à dix ___." }],
+      translation: [{ prompt: "Translate: I would like a return ticket.", answer: "" }, { prompt: "Translate: The bus leaves at eight.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Je voudrais un billet ___ Lyon.", answer: "" }, { prompt: "Le train part à dix ___.", answer: "" }],
       speaking: ["Role-play buying a train ticket with destination, time, and platform."]
     },
     homework: [
@@ -1721,8 +1721,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which is correct?", options: ["un kilo de pommes", "un kilo des pommes", "un kilo les pommes"], answer: "un kilo de pommes" },
         { prompt: "What does je prends mean in a shop?", options: ["I'll take", "I understand", "I leave"], answer: "I'll take" }
       ],
-      translation: [{ prompt: "Translate: I need a bottle of water." }, { prompt: "Translate: How much does it cost?" }],
-      fillInTheBlanks: [{ prompt: "Une tranche ___ pain." }, { prompt: "Je ___ une baguette." }],
+      translation: [{ prompt: "Translate: I need a bottle of water.", answer: "" }, { prompt: "Translate: How much does it cost?", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Une tranche ___ pain.", answer: "" }, { prompt: "Je ___ une baguette.", answer: "" }],
       speaking: ["Ask for three quantities at a market counter."]
     },
     homework: [
@@ -1791,8 +1791,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which sentence is negative and correct?", options: ["Je ne mange pas de viande.", "Je ne mange pas du viande.", "Je mange pas la viande."], answer: "Je ne mange pas de viande." },
         { prompt: "What does le fromage mean?", options: ["cheese", "bread", "fish"], answer: "cheese" }
       ],
-      translation: [{ prompt: "Translate: I would like some cheese." }, { prompt: "Translate: I do not eat fish." }],
-      fillInTheBlanks: [{ prompt: "Je mange ___ pain." }, { prompt: "Je ne mange pas ___ viande." }],
+      translation: [{ prompt: "Translate: I would like some cheese.", answer: "" }, { prompt: "Translate: I do not eat fish.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Je mange ___ pain.", answer: "" }, { prompt: "Je ne mange pas ___ viande.", answer: "" }],
       speaking: ["Say what you eat for breakfast, lunch, and dinner."]
     },
     homework: [
@@ -1861,8 +1861,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which phrase asks for the bill?", options: ["L'addition, s'il vous plaît.", "La carte, s'il vous plaît.", "Une table, s'il vous plaît."], answer: "L'addition, s'il vous plaît." },
         { prompt: "Which is softer for ordering?", options: ["Je voudrais", "Je veux", "Donne-moi"], answer: "Je voudrais" }
       ],
-      translation: [{ prompt: "Translate: I would like water." }, { prompt: "Translate: A table for four, please." }],
-      fillInTheBlanks: [{ prompt: "Je ___ le plat du jour." }, { prompt: "___ fromage, s'il vous plaît." }],
+      translation: [{ prompt: "Translate: I would like water.", answer: "" }, { prompt: "Translate: A table for four, please.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Je ___ le plat du jour.", answer: "" }, { prompt: "___ fromage, s'il vous plaît.", answer: "" }],
       speaking: ["Role-play arriving at a restaurant, ordering one item, and asking for the bill."]
     },
     homework: [
@@ -1931,8 +1931,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which phrase means it is raining?", options: ["Il pleut.", "Il fait pluie.", "Il neige."], answer: "Il pleut." },
         { prompt: "What does l'hiver mean?", options: ["winter", "summer", "spring"], answer: "winter" }
       ],
-      translation: [{ prompt: "Translate: It is cold today." }, { prompt: "Translate: In summer, it is hot." }],
-      fillInTheBlanks: [{ prompt: "Il fait ___ aujourd'hui." }, { prompt: "En hiver, il fait ___." }],
+      translation: [{ prompt: "Translate: It is cold today.", answer: "" }, { prompt: "Translate: In summer, it is hot.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Il fait ___ aujourd'hui.", answer: "" }, { prompt: "En hiver, il fait ___.", answer: "" }],
       speaking: ["Describe today's weather and say what season it is."]
     },
     homework: [
@@ -2001,8 +2001,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which phrase means free time?", options: ["le temps libre", "le travail", "le matin"], answer: "le temps libre" },
         { prompt: "Which is correct?", options: ["faire du sport", "faire de sport", "faire le sport"], answer: "faire du sport" }
       ],
-      translation: [{ prompt: "Translate: I often read." }, { prompt: "Translate: Shall we go out Saturday?" }],
-      fillInTheBlanks: [{ prompt: "Je fais ___ sport." }, { prompt: "J'écoute de la ___." }],
+      translation: [{ prompt: "Translate: I often read.", answer: "" }, { prompt: "Translate: Shall we go out Saturday?", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Je fais ___ sport.", answer: "" }, { prompt: "J'écoute de la ___.", answer: "" }],
       speaking: ["Say three things you do in your free time and one thing you do not do."]
     },
     homework: [
@@ -2071,8 +2071,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which phrase means me too?", options: ["moi aussi", "moi non plus", "à mon avis"], answer: "moi aussi" },
         { prompt: "What stays after j'aime when it is an action?", options: ["the infinitive", "a past form", "only a noun"], answer: "the infinitive" }
       ],
-      translation: [{ prompt: "Translate: I do not like fish." }, { prompt: "Translate: I prefer the train." }],
-      fillInTheBlanks: [{ prompt: "J'aime ___." }, { prompt: "Je n'aime pas ___." }],
+      translation: [{ prompt: "Translate: I do not like fish.", answer: "" }, { prompt: "Translate: I prefer the train.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "J'aime ___.", answer: "" }, { prompt: "Je n'aime pas ___.", answer: "" }],
       speaking: ["Give three opinions about food, transport, and hobbies."]
     },
     homework: [
@@ -2143,8 +2143,8 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which connector means then?", options: ["puis", "mais", "parce que"], answer: "puis" },
         { prompt: "Which phrase politely asks where the bakery is?", options: ["Où est la boulangerie, s'il vous plaît ?", "Donne la boulangerie.", "Je suis boulangerie."], answer: "Où est la boulangerie, s'il vous plaît ?" }
       ],
-      translation: [{ prompt: "Translate: First, I go to the market, then I come home." }, { prompt: "Translate: I would like a ticket for Lyon." }],
-      fillInTheBlanks: [{ prompt: "Je vais à la gare, ___ je prends le train." }, { prompt: "Je prends le bus ___ la gare est loin." }],
+      translation: [{ prompt: "Translate: First, I go to the market, then I come home.", answer: "" }, { prompt: "Translate: I would like a ticket for Lyon.", answer: "" }],
+      fillInTheBlanks: [{ prompt: "Je vais à la gare, ___ je prends le train.", answer: "" }, { prompt: "Je prends le bus ___ la gare est loin.", answer: "" }],
       speaking: ["Tell the story of a simple day in France using at least six sentences and three connectors."]
     },
     homework: [
