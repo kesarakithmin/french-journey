@@ -226,9 +226,31 @@ console.log("Found lesson:", lesson)
     />
 
     {fillResults[index] !== undefined && (
-      <p className="mt-2 font-semibold">
-        {fillResults[index] ? "✅ Correct!" : "❌ Try again"}
-      </p>
+      <div
+        className={`mt-3 rounded-xl p-3 font-semibold transition-all duration-300 ${
+          fillResults[index]
+            ? "bg-green-500/20 text-green-600"
+            : "bg-red-500/20 text-red-600"
+        }`}
+      >
+        {fillResults[index] ? (
+          <>
+            <p>🎉 Correct!</p>
+            <p className="text-sm mt-1">
+              +10 XP
+            </p>
+          </>
+        ) : (
+          <>
+            <p>❌ Try again</p>
+            <p className="text-sm mt-1">
+              Correct answer:
+              {" "}
+              {lessonAnswers[String(lessonId)]?.[item.prompt]?.join(", ")}
+            </p>
+          </>
+        )}
+      </div>
     )}
   </li>
 ))}
@@ -251,7 +273,11 @@ console.log("Found lesson:", lesson)
                   setFillResults(results)
                   setFillChecked(true)
                 }}
-                className="mt-4 rounded-xl bg-[color:var(--color-primary)] px-5 py-3 font-semibold text-white"
+                className="mt-4 rounded-xl bg-[color:var(--color-primary)] px-5 py-3 font-semibold text-white
+                transition-all duration-200
+                hover:scale-105 hover:shadow-lg
+                active:scale-95
+                cursor-pointer"
               >
                 Check Answers
               </button>
