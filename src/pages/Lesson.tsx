@@ -246,9 +246,13 @@ console.log("Found lesson:", lesson)
           <>
             <p>❌ Try again</p>
             <p className="text-sm mt-1">
-              Correct answer:
-              {" "}
-              {lessonAnswers[String(lessonId)]?.[item.prompt]?.join(", ")}
+              {item.type !== "personal" && (
+                <>
+                  Correct answer:
+                  {" "}
+                  {lessonAnswers[String(lessonId)]?.[item.prompt]?.join(", ")}
+                </>
+              )}
             </p>
           </>
         )}
@@ -267,7 +271,8 @@ console.log("Found lesson:", lesson)
 
                     return checkAnswer(
                       fillAnswers[i] || "",
-                      acceptedAnswers
+                      acceptedAnswers,
+                      item.type
                     )
 
                   })
