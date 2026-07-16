@@ -34,84 +34,84 @@ export const lessonAnswers = {
     "Je voudrais ___ menu.": ["un", "le"]
   },
   "11": {
-    "Je ___ au marché. (am going)": [],
-    "J'___ un rendez-vous. (have)": []
+    "Je ___ au marché. (am going)": ["vais"],
+    "J'___ un rendez-vous. (have)": ["ai"]
   },
   "12": {
-    "Je ___ français un peu.": [],
-    "Elle ___ une adresse.": []
+    "Je ___ français un peu.": ["parle"],
+    "Elle ___ une adresse.": ["a"]
   },
   "13": {
-    "___ êtes français ?": [],
-    "___ vont à l'école.": []
+    "___ êtes français ?": ["Vous"],
+    "___ vont à l'école.": ["Ils", "Elles"]
   },
   "14": {
-    "Voici ___ famille.": [],
-    "J'ai ___ frère.": []
+    "Voici ___ famille.": ["ma"],
+    "J'ai ___ frère.": ["un"]
   },
   "15": {
-    "Elle est grand___.": [],
-    "J'ai les ___ courts.": []
+    "Elle est grand___.": ["e"],
+    "J'ai les ___ courts.": ["cheveux"]
   },
   "16": {
-    "Chez moi, il y ___ un salon.": [],
-    "J'habite dans une ___.": []
+    "Chez moi, il y ___ un salon.": ["a"],
+    "J'habite dans une ___.": ["maison", "appartement"]
   },
   "17": {
-    "La clé est ___ la table.": [],
-    "Le lit est dans la ___.": []
+    "La clé est ___ la table.": ["sur"],
+    "Le lit est dans la ___.": ["chambre"]
   },
   "18": {
-    "Je ___ lève à sept heures.": [],
-    "Le soir, je me ___.": []
+    "Je ___ lève à sept heures.": ["me"],
+    "Le soir, je me ___.": ["couche"]
   },
   "19": {
-    "Il ___ neuf heures.": [],
-    "Je suis en ___.": []
+    "Il ___ neuf heures.": ["est"],
+    "Je suis en ___.": ["retard"]
   },
   "20": {
-    "Je ___ à neuf heures.": [],
-    "Vous faites quoi dans la ___ ?": []
+    "Je ___ à neuf heures.": ["travaille"],
+    "Vous faites quoi dans la ___ ?": ["journée"]
   },
   "21": {
-    "Je vais ___ pharmacie.": [],
-    "La gare est près ___ centre.": []
+    "Je vais ___ pharmacie.": ["à la"],
+    "La gare est près ___ centre.": ["du"]
   },
   "22": {
-    "Je suis ___.": [],
-    "Continuez tout ___.": []
+    "Je suis ___.": ["perdu"],
+    "Continuez tout ___.": ["droit"]
   },
   "23": {
-    "Je voudrais un billet ___ Lyon.": [],
-    "Le train part à dix ___.": []
+    "Je voudrais un billet ___ Lyon.": ["pour"],
+    "Le train part à dix ___.": ["heures"]
   },
   "24": {
-    "Une tranche ___ pain.": [],
-    "Je ___ une baguette.": []
+    "Une tranche ___ pain.": ["de"],
+    "Je ___ une baguette.": ["voudrais"]
   },
   "25": {
-    "Je mange ___ pain.": [],
-    "Je ne mange pas ___ viande.": []
+    "Je mange ___ pain.": ["du"],
+    "Je ne mange pas ___ viande.": ["de"]
   },
   "26": {
-    "Je ___ le plat du jour.": [],
-    "___ fromage, s'il vous plaît.": []
+    "Je ___ le plat du jour.": ["prends"],
+    "___ fromage, s'il vous plaît.": ["Du"]
   },
   "27": {
-    "Il fait ___ aujourd'hui.": [],
-    "En hiver, il fait ___.": []
+    "Il fait ___ aujourd'hui.": ["beau", "chaud", "froid"],
+    "En hiver, il fait ___.": ["froid"]
   },
   "28": {
-    "Je fais ___ sport.": [],
-    "J'écoute de la ___.": []
+    "Je fais ___ sport.": ["du"],
+    "J'écoute de la ___.": ["musique"]
   },
   "29": {
-    "J'aime ___.": [],
-    "Je n'aime pas ___.": []
+    "J'aime ___.": ["le français", "la musique"],
+    "Je n'aime pas ___.": ["ça"]
   },
   "30": {
-    "Je vais à la gare, ___ je prends le train.": [],
-    "Je prends le bus ___ la gare est loin.": []
+    "Je vais à la gare, ___ je prends le train.": ["puis", "et"],
+    "Je prends le bus ___ la gare est loin.": ["parce que"]
   }
 }
 
