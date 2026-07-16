@@ -9,6 +9,7 @@ import { useParams } from "react-router-dom"
 
 function Lesson() {
   const [quizCompleted, setQuizCompleted] = useState(false)
+  const [fillChecked, setFillChecked] = useState(false)
   const { id } = useParams()
   const lessonId = Number(id)
   const lesson = lessonContent.find((item) => item.id === lessonId)
@@ -214,6 +215,14 @@ console.log("Found lesson:", lesson)
   </li>
 ))}
               </ul>
+
+              <button
+                onClick={() => setFillChecked(true)}
+                className="mt-4 rounded-xl bg-[color:var(--color-primary)] px-5 py-3 font-semibold text-white"
+              >
+                Check Answers
+              </button>
+
             </div>
 
             <div>
