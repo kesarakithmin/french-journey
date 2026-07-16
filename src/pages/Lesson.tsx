@@ -198,10 +198,21 @@ console.log("Found lesson:", lesson)
               <h3 className="font-semibold">Fill in the blanks</h3>
               <ul className="mt-2 space-y-2">
                 {practice.fillInTheBlanks.map((item, index) => (
-                  <li key={`${item.prompt}-${index}`} className="rounded-2xl border border-[color:var(--color-border)] p-3">
-                    <p className="font-medium">{item.prompt}</p>
-                  </li>
-                ))}
+  <li
+    key={`${item.prompt}-${index}`}
+    className="rounded-2xl border border-[color:var(--color-border)] p-3"
+  >
+    <p className="font-medium">
+      {item.prompt}
+    </p>
+
+    <input
+      type="text"
+      placeholder="Your answer..."
+      className="mt-3 w-full rounded-xl border border-[color:var(--color-border)] bg-[color:var(--color-card)] px-4 py-3 text-[color:var(--color-text)] placeholder:text-[color:var(--color-text-muted)] outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]"
+    />
+  </li>
+))}
               </ul>
             </div>
 

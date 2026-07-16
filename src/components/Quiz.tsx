@@ -50,11 +50,11 @@ function Quiz({ questions, onComplete }: QuizProps) {
                 onClick={() =>
                   selectAnswer(index, option)
                 }
-                className={`w-full border p-2 rounded-lg text-left ${
-                  answers[index] === option
-                    ? "bg-blue-100"
-                    : ""
-                }`}
+                className={`w-full rounded-xl border p-3 text-left text-[color:var(--color-text)] bg-[color:var(--color-card)] transition ${
+  answers[index] === option
+    ? "border-[color:var(--color-primary)] bg-[color:var(--color-primary)]/10"
+    : "border-[color:var(--color-border)]"
+}`}
               >
                 {option}
               </button>
@@ -76,7 +76,7 @@ function Quiz({ questions, onComplete }: QuizProps) {
   {score === questions.length && onComplete && (
     <button
       onClick={() => onComplete(score)}
-      className="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg"
+className="mt-4 rounded-xl bg-green-600 px-5 py-3 font-semibold text-white"
     >
       Finish Quiz ✅
     </button>
