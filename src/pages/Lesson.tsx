@@ -12,6 +12,9 @@ function Lesson() {
   const { id } = useParams()
   const lessonId = Number(id)
   const lesson = lessonContent.find((item) => item.id === lessonId)
+  console.log("Route ID:", lessonId)
+console.log("Available IDs:", lessonContent.map(l => l.id))
+console.log("Found lesson:", lesson)
 
   const { completeLesson, progress } = useProgress()
   const { speak } = useSpeech()
