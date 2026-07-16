@@ -53,7 +53,13 @@ function Layout() {
         <Outlet />
       </main>
 
-      <nav className="fixed bottom-0 left-0 right-0 z-30 border-t border-[color:var(--color-border)] bg-[color:var(--color-surface)]/95 px-3 py-3 shadow-[0_-10px_30px_rgba(15,23,42,0.08)] backdrop-blur">
+      <footer className="mx-auto w-full max-w-5xl px-4 py-6 text-center text-sm text-[color:var(--color-text-muted)]">
+        🇫🇷 French Journey
+        <br />
+        Made with ❤️ by Kezi
+      </footer>
+
+      <nav className="fixed bottom-0 left-0 right-0 z-30 border-t border-[color:var(--color-border)] bg-[color:var(--color-surface)]/95 px-3 py-3 shadow-[0_-10px-30px_rgba(15,23,42,0.08)] backdrop-blur">
         <div className="mx-auto flex max-w-5xl justify-around gap-2">
           {navItems.map((item) => {
             const isActive = location.pathname === item.to
