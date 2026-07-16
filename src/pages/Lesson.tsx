@@ -9,7 +9,11 @@ import { useParams } from "react-router-dom"
 
 function Lesson() {
   const [quizCompleted, setQuizCompleted] = useState(false)
+  const [fillAnswers, setFillAnswers] = useState<string[]>([])
+  const [fillResults, setFillResults] = useState<boolean[]>([])
   const [, setFillChecked] = useState(false)
+  
+  
   const { id } = useParams()
   const lessonId = Number(id)
   const lesson = lessonContent.find((item) => item.id === lessonId)
@@ -209,15 +213,35 @@ console.log("Found lesson:", lesson)
 
     <input
       type="text"
+      value={fillAnswers[index] || ""}
+      onChange={(e) => {
+        const updated = [...fillAnswers]
+        updated[index] = e.target.value
+        setFillAnswers(updated)
+      }}
       placeholder="Your answer..."
       className="mt-3 w-full rounded-xl border border-[color:var(--color-border)] bg-[color:var(--color-card)] px-4 py-3 text-[color:var(--color-text)] placeholder:text-[color:var(--color-text-muted)] outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]"
     />
+
+    {fillResults[index] !== undefined && (
+      <p className="mt-2 font-semibold">
+        {fillResults[index] ? "✅ Correct!" : "❌ Try again"}
+      </p>
+    )}
   </li>
 ))}
               </ul>
 
               <button
-                onClick={() => setFillChecked(true)}
+                onClick={() => {
+                  const results = practice.fillInTheBlanks.map((item, i) =>
+                    fillAnswers[i]?.trim().toLowerCase() ===
+                    item.answer?.trim().toLowerCase()
+                  )
+
+                  setFillResults(results)
+                  setFillChecked(true)
+                }}
                 className="mt-4 rounded-xl bg-[color:var(--color-primary)] px-5 py-3 font-semibold text-white"
               >
                 Check Answers
