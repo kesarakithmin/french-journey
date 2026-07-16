@@ -70,7 +70,13 @@ export const lessonContent: Lesson[] = [
         { prompt: "Which phrase means 'My name is...'?", options: ["Je suis fatigué", "Je m'appelle", "Merci beaucoup"], answer: "Je m'appelle" }
       ],
       translation: [{ prompt: "Translate: I am Ana.", answer: "" }],
-      fillInTheBlanks: [{ prompt: "Bonjour, je m'appelle ___.", answer: "" }],
+      fillInTheBlanks: [
+        {
+          prompt: "Write your introduction:",
+          answer: "",
+          type: "personal"
+        }
+      ],
       speaking: ["Introduce yourself and say how you are feeling today."]
     },
     homework: [

@@ -36,6 +36,7 @@ export interface PracticeItem {
   prompt: string
   options?: string[]
   answer?: string
+  type?: "exact" | "personal" | "translation"
 }
 
 export interface PracticeSection {
