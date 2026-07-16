@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom"
 
 function Lesson() {
   const [quizCompleted, setQuizCompleted] = useState(false)
-  const [fillChecked, setFillChecked] = useState(false)
+  const [, setFillChecked] = useState(false)
   const { id } = useParams()
   const lessonId = Number(id)
   const lesson = lessonContent.find((item) => item.id === lessonId)
