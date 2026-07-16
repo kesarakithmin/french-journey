@@ -4,6 +4,7 @@ import { lessonContent } from "../data/lessonContent"
 import { lessonAnswers } from "../data/lessonAnswers"
 import { checkAnswer } from "../utils/checkAnswer"
 import { useProgress } from "../hooks/useProgress"
+import { useXP } from "../hooks/useXP"
 import { useSpeech } from "../hooks/useSpeech"
 import Quiz from "../components/Quiz"
 import { useState } from "react"
@@ -24,6 +25,7 @@ console.log("Available IDs:", lessonContent.map(l => l.id))
 console.log("Found lesson:", lesson)
 
   const { completeLesson, progress } = useProgress()
+  const { addXP } = useXP()
   const { speak } = useSpeech()
 
   if (!lesson) {
@@ -271,6 +273,13 @@ console.log("Found lesson:", lesson)
                   })
 
                   setFillResults(results)
+
+                  const correctCount = results.filter(Boolean).length
+
+                  if (correctCount > 0) {
+                    addXP(correctCount * 10)
+                  }
+
                   setFillChecked(true)
                 }}
                 className="mt-4 rounded-xl bg-[color:var(--color-primary)] px-5 py-3 font-semibold text-white
