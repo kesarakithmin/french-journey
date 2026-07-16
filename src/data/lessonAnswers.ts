@@ -1,120 +1,166 @@
 
 // French Journey Answer Database
-// Fill these answers carefully
 
-export const lessonAnswers: Record<
-  string,
-  Record<string, string[]>
-> = {
-  "1": {
-    "Bonjour, je m'appelle ___.": ["Marie", "Paul", "Jean"]
-  },
-  "2": {
-    "___ va, merci.": ["Ça", "Ca"]
-  },
-  "3": {
-    "___ ans.": ["vingt", "trente", "dix"]
-  },
-  "4": {
-    "Aujourd'hui, c'est ___.": ["lundi", "mardi", "mercredi"]
-  },
-  "5": {
-    "J'ai ___ ans.": ["vingt", "trente", "dix"]
-  },
-  "6": {
-    "C'est ma ___.": ["famille", "mère", "maison"]
-  },
-  "7": {
-    "Je voudrais un ___.": ["café", "menu", "sandwich"]
-  },
-  "8": {
-    "Je cherche du ___.": ["pain", "lait", "fromage"]
-  },
-  "9": {
-    "C'est ___ ?": ["combien", "quoi", "qui"]
-  },
-  "10": {
-    "Je voudrais ___ menu.": ["un", "le"]
-  },
-  "11": {
-    "Je ___ au marché. (am going)": ["vais"],
-    "J'___ un rendez-vous. (have)": ["ai"]
-  },
-  "12": {
-    "Je ___ français un peu.": ["parle"],
-    "Elle ___ une adresse.": ["a"]
-  },
-  "13": {
-    "___ êtes français ?": ["Vous"],
-    "___ vont à l'école.": ["Ils", "Elles"]
-  },
-  "14": {
-    "Voici ___ famille.": ["ma"],
-    "J'ai ___ frère.": ["un"]
-  },
-  "15": {
-    "Elle est grand___.": ["e"],
-    "J'ai les ___ courts.": ["cheveux"]
-  },
-  "16": {
-    "Chez moi, il y ___ un salon.": ["a"],
-    "J'habite dans une ___.": ["maison", "appartement"]
-  },
-  "17": {
-    "La clé est ___ la table.": ["sur"],
-    "Le lit est dans la ___.": ["chambre"]
-  },
-  "18": {
-    "Je ___ lève à sept heures.": ["me"],
-    "Le soir, je me ___.": ["couche"]
-  },
-  "19": {
-    "Il ___ neuf heures.": ["est"],
-    "Je suis en ___.": ["retard"]
-  },
-  "20": {
-    "Je ___ à neuf heures.": ["travaille"],
-    "Vous faites quoi dans la ___ ?": ["journée"]
-  },
-  "21": {
-    "Je vais ___ pharmacie.": ["à la"],
-    "La gare est près ___ centre.": ["du"]
-  },
-  "22": {
-    "Je suis ___.": ["perdu"],
-    "Continuez tout ___.": ["droit"]
-  },
-  "23": {
-    "Je voudrais un billet ___ Lyon.": ["pour"],
-    "Le train part à dix ___.": ["heures"]
-  },
-  "24": {
-    "Une tranche ___ pain.": ["de"],
-    "Je ___ une baguette.": ["voudrais"]
-  },
-  "25": {
-    "Je mange ___ pain.": ["du"],
-    "Je ne mange pas ___ viande.": ["de"]
-  },
-  "26": {
-    "Je ___ le plat du jour.": ["prends"],
-    "___ fromage, s'il vous plaît.": ["Du"]
-  },
-  "27": {
-    "Il fait ___ aujourd'hui.": ["beau", "chaud", "froid"],
-    "En hiver, il fait ___.": ["froid"]
-  },
-  "28": {
-    "Je fais ___ sport.": ["du"],
-    "J'écoute de la ___.": ["musique"]
-  },
-  "29": {
-    "J'aime ___.": ["le français", "la musique"],
-    "Je n'aime pas ___.": ["ça"]
-  },
-  "30": {
-    "Je vais à la gare, ___ je prends le train.": ["puis", "et"],
-    "Je prends le bus ___ la gare est loin.": ["parce que"]
+type AnswerValue = string[] | { type: string }
+
+type LessonAnswerMap = {
+  [lessonId: string]: {
+    [prompt: string]: AnswerValue
   }
 }
 
+export const lessonAnswers: LessonAnswerMap = {
+
+"1": {
+  "Complete: Bonjour, je m'appelle ______.": {
+    type: "personal"
+  }
+},
+
+"2": {
+  "Complete: ___ va, merci.": [
+    "Ça",
+    "Ca"
+  ]
+},
+
+"3": {
+  "Complete: ___ ans.": [
+    "J'ai vingt",
+    "J'ai"
+  ]
+},
+
+"4": {
+  "Complete: Aujourd'hui, c'est ___.": {
+    type: "personal"
+  }
+},
+
+"5": {
+  "Complete: J'ai ___ ans.": {
+    type: "personal"
+  }
+},
+
+"6": {
+  "Complete: C'est ma ___.": [
+    "famille",
+    "mère",
+    "soeur"
+  ]
+},
+
+"7": {
+  "Complete: Je voudrais un ___.": [
+    "café",
+    "menu",
+    "sandwich"
+  ]
+},
+
+"8": {
+  "Complete: Je cherche du ___.": [
+    "pain",
+    "lait",
+    "sucre"
+  ]
+},
+
+"9": {
+  "Complete: C'est ___ ?": [
+    "quoi",
+    "qui"
+  ]
+},
+
+"10": {
+  "Complete: Je voudrais ___ menu.": [
+    "un"
+  ]
+},
+
+"11": {
+  "Complete: Je ___ au marché. (am going)": [
+    "vais"
+  ],
+  "Complete: J'___ un rendez-vous. (have)": [
+    "ai"
+  ]
+},
+
+"12": {
+  "Complete: Je ___ français un peu.": [
+    "parle"
+  ],
+  "Complete: Elle ___ une adresse.": [
+    "a"
+  ]
+},
+
+"13": {
+  "Complete: ___ êtes français ?": [
+    "Vous"
+  ],
+  "Complete: ___ vont à l'école.": [
+    "Ils",
+    "Elles"
+  ]
+},
+
+"14": {
+  "Complete: Voici ___ famille.": [
+    "ma"
+  ],
+  "Complete: J'ai ___ frère.": [
+    "un"
+  ]
+},
+
+"15": {
+  "Complete: Elle est grand___.": [
+    "e"
+  ],
+  "Complete: J'ai les ___ courts.": [
+    "cheveux"
+  ]
+},
+
+"16": {
+  "Complete: Chez moi, il y ___ un salon.": [
+    "a"
+  ],
+  "Complete: J'habite dans une ___.": [
+    "maison",
+    "appartement"
+  ]
+},
+
+"17": {
+  "Complete: La clé est ___ la table.": [
+    "sur"
+  ],
+  "Complete: Le lit est dans la ___.": [
+    "chambre"
+  ]
+},
+
+"18": {
+  "Complete: Je ___ lève à sept heures.": [
+    "me"
+  ],
+  "Complete: Le soir, je me ___.": [
+    "couche"
+  ]
+},
+
+"19": {
+  "Complete: Il ___ neuf heures.": [
+    "est"
+  ],
+  "Complete: Je suis en ___.": [
+    "retard"
+  ]
+}
+
+}

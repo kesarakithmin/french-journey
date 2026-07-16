@@ -250,7 +250,9 @@ console.log("Found lesson:", lesson)
                 <>
                   Correct answer:
                   {" "}
-                  {lessonAnswers[String(lessonId)]?.[item.prompt]?.join(", ")}
+                  {Array.isArray(lessonAnswers[String(lessonId)]?.[item.prompt])
+  ? (lessonAnswers[String(lessonId)]?.[item.prompt] as string[]).join(", ")
+  : ""}
                 </>
               )}
             </p>
@@ -266,8 +268,13 @@ console.log("Found lesson:", lesson)
                 onClick={() => {
                   const results = practice.fillInTheBlanks.map((item, i) => {
 
+                    const answerData =
+                      lessonAnswers[String(lessonId)]?.[item.prompt]
+
                     const acceptedAnswers =
-                      lessonAnswers[String(lessonId)]?.[item.prompt] || []
+                      Array.isArray(answerData)
+                        ? answerData
+                        : []
 
                     return checkAnswer(
                       fillAnswers[i] || "",
