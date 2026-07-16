@@ -1,43 +1,43 @@
-import { useState } from "react"
-import type { Progress } from "../types/progress"
+import { useEffect, useState } from "react"
 
-const STORAGE_KEY = "french-journey-progress"
+import {
+  getProgress,
+  completeLesson as finishLesson,
+} from "../utils/progress"
+
+import type { ProgressData } from "../utils/progress"
 
 export function useProgress() {
+  const [progress, setProgress] = useState<ProgressData>(
+    getProgress()
+  )
 
-  const [progress, setProgress] = useState<Progress>(() => {
-    const saved = localStorage.getItem(STORAGE_KEY)
-
-    return saved
-      ? JSON.parse(saved)
-      : { completedLessons: [] }
-  })
-
+  useEffect(() => {
+    setProgress(getProgress())
+  }, [])
 
   function completeLesson(id: number) {
-
-    if (progress.completedLessons.includes(id)) {
-      return
-    }
-
-    const updated = {
-      completedLessons: [
-        ...progress.completedLessons,
-        id
-      ]
-    }
-
+    const updated = finishLesson(id)
     setProgress(updated)
-
-    localStorage.setItem(
-      STORAGE_KEY,
-      JSON.stringify(updated)
-    )
   }
-
 
   return {
     progress,
-    completeLesson
+    completeLesson,
+
+    completedLessons:
+      progress.completedLessons,
+
+    streak:
+      progress.streak,
+
+    progressPercentage:
+      Math.round(
+        (progress.completedLessons.length / 30) * 100
+      ),
+
+    isLessonCompleted(id: number) {
+      return progress.completedLessons.includes(id)
+    },
   }
 }

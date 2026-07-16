@@ -250,6 +250,30 @@ console.log("Found lesson:", lesson)
       <p className="text-sm text-[color:var(--color-text-muted)]">Completed lessons: {progress.completedLessons.length}</p>
 
       <Quiz questions={lesson.quiz} onComplete={() => setQuizCompleted(true)} />
+
+<section className="space-y-4">
+  <Card>
+    <div className="flex flex-col gap-4">
+
+      <h2 className="text-xl font-semibold">
+        Finish this lesson 🎉
+      </h2>
+
+      <p className="text-[color:var(--color-text-muted)]">
+        Complete this lesson to save your progress.
+      </p>
+
+      <button
+        onClick={() => completeLesson(lesson.id)}
+        className="rounded-xl bg-[color:var(--color-primary)] px-6 py-3 font-semibold text-white"
+      >
+        Complete Lesson
+      </button>
+
+    </div>
+  </Card>
+</section>
+
     </div>
   )
 }
