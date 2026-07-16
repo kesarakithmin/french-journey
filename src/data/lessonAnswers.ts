@@ -2,7 +2,10 @@
 // French Journey Answer Database
 // Fill these answers carefully
 
-export const lessonAnswers = {
+export const lessonAnswers: Record<
+  string,
+  Record<string, string[]>
+> = {
   "1": {
     "Bonjour, je m'appelle ___.": ["Marie", "Paul", "Jean"]
   },

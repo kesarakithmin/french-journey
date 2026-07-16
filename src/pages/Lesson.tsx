@@ -1,6 +1,8 @@
 import { Volume2 } from "lucide-react"
 import Card from "../components/Card"
 import { lessonContent } from "../data/lessonContent"
+import { lessonAnswers } from "../data/lessonAnswers"
+import { checkAnswer } from "../utils/checkAnswer"
 import { useProgress } from "../hooks/useProgress"
 import { useSpeech } from "../hooks/useSpeech"
 import Quiz from "../components/Quiz"
@@ -234,10 +236,17 @@ console.log("Found lesson:", lesson)
 
               <button
                 onClick={() => {
-                  const results = practice.fillInTheBlanks.map((item, i) =>
-                    fillAnswers[i]?.trim().toLowerCase() ===
-                    item.answer?.trim().toLowerCase()
-                  )
+                  const results = practice.fillInTheBlanks.map((item, i) => {
+
+                    const acceptedAnswers =
+                      lessonAnswers[String(lessonId)]?.[item.prompt] || []
+
+                    return checkAnswer(
+                      fillAnswers[i] || "",
+                      acceptedAnswers
+                    )
+
+                  })
 
                   setFillResults(results)
                   setFillChecked(true)
