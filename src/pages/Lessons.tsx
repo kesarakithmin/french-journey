@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom"
 import Card from "../components/Card"
 import { lessonContent } from "../data/lessonContent"
+import { useProgress } from "../hooks/useProgress"
 
 function Lessons() {
+  const { progress } = useProgress()
+
+  const completedLessons = progress.completedLessons || []
+
   return (
     <div className="space-y-6">
       <section className="space-y-2">
@@ -10,6 +15,10 @@ function Lessons() {
         <h1 className="text-3xl font-semibold">French lessons 🇫🇷</h1>
         <p className="text-[color:var(--color-text-muted)]">
           A practical 30-day roadmap to everyday French confidence.
+        </p>
+
+        <p className="text-sm font-semibold text-[color:var(--color-primary)]">
+          Progress: {completedLessons.length}/30 lessons completed
         </p>
       </section>
 
@@ -30,14 +39,28 @@ function Lessons() {
       <div className="space-y-4">
         {lessonContent.map((lesson) => (
           <Link key={lesson.id} to={`/lessons/${lesson.id}`} className="block">
-            <Card className="transition hover:-translate-y-0.5">
+            <Card
+              className={`transition hover:-translate-y-0.5 ${
+                completedLessons.includes(lesson.id)
+                  ? "border-green-500/40 bg-green-500/10"
+                  : ""
+              }`}
+            >
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <h2 className="text-xl font-semibold">Day {lesson.id}: {lesson.title}</h2>
                   <p className="mt-1 text-sm text-[color:var(--color-text-muted)]">{lesson.level}</p>
                 </div>
-                <span className="rounded-full bg-[color:var(--color-primary)]/10 px-3 py-1 text-xs font-semibold text-[color:var(--color-primary)]">
-                  Start
+                <span
+                  className={`rounded-full px-3 py-1 text-xs font-semibold ${
+                    completedLessons.includes(lesson.id)
+                      ? "bg-green-500/20 text-green-600"
+                      : "bg-[color:var(--color-primary)]/10 text-[color:var(--color-primary)]"
+                  }`}
+                >
+                  {completedLessons.includes(lesson.id)
+                    ? "✓ Completed"
+                    : "Start"}
                 </span>
               </div>
               <p className="mt-3 text-sm text-[color:var(--color-text-muted)]">
